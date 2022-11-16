@@ -1,12 +1,18 @@
-on: [push, pull_request]
+name: Python Lint
+
+on: 
+  push:
+    paths:
+      - 'api/**'
+  pull_request:
+    paths:
+      - 'api/**'
 
 jobs:
-  python-black:
-    name: Python Black
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Python Black
-        uses: cytopia/docker-black@0.8
+      - uses: actions/checkout@v2
+      - uses: psf/black@stable
         with:
-          path: 'api/'
+          src: 'api/'
