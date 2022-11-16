@@ -3,7 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-time_range_conversions = {"day": ["-1d", "1h"],"week": ["-1w", "2h"],"month": ["-1mo", "1d"],}
+time_range_conversions = {
+    "day": ["-1d", "1h"],
+    "week": ["-1w", "2h"],
+    "month": ["-1mo", "1d"],
+}
 
 
 def build_moving_avg_query(company: str, time_range: str) -> str:
