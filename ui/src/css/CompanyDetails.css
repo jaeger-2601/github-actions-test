@@ -1,0 +1,66 @@
+
+body {
+    background-color: #2f333c;
+}
+
+.info-title {
+    color: #3B71CA;
+}
+
+.details-body {
+    height: 92.5vh;
+}
+
+.price-chart {
+    height: 40%;
+}
+
+.averages-chart {
+    height: 20em;
+}
+
+.details-body .nav-link {
+    background-color: #20232a;
+    color: white;
+}
+
+.nav-item .active {
+    background-color: #54B4D3 !important;
+    color: white !important;
+    border-color: #54B4D3 !important;
+}
+
+.word-cloud-wrapper-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;  
+}
+
+.word-cloud-wrapper {
+    height: 300px;
+    width: 500px;
+}
+
+.fundamentals-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+}
+
+.fundamentals-data th {
+    color: #54B4D3 !important;
+    text-align: center !important;
+}
+
+.fundamentals-data td {
+    color: white !important;
+    text-align: center !important;
+}
+
+.fundamentals-data .table {
+    width: 20%;
+    margin-left: 5em;
+    margin-right: 5em;
+}
