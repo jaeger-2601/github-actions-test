@@ -6,8 +6,7 @@ from influxdb_client import InfluxDBClient
 from .query_builder import (
     build_moving_avg_query,
     build_overall_sentiment_averages_query,
-    build_social_media_text_query,
-)
+    build_social_media_text_query,)
 
 load_dotenv()
 
